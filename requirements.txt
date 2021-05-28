@@ -1,0 +1,7 @@
+pyTelegramBotAPI==3.7.9
+psycopg2-binary==2.8.6
+sqlalchemy==1.4.15
+python-dotenv==0.17.1
+alembic==1.6.4
+nltk==3.6.2
+gensim==4.0.1
