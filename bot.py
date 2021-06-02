@@ -85,6 +85,11 @@ def msg_handler(message: Message):
                 'с 9:00 до 13:00\n' \
                 'с 13:30 до 17:30'
 
+    if msg['text'] == 'Какая сегодня погода?':
+        reply = 'Извините, но я Вас не понял'
+        bot.reply_to(message, reply, parse_mode='markdown')
+        return 
+
     if messages == 2:
         bot.reply_to(message, reply, parse_mode='markdown')
     else:
