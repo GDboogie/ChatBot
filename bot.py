@@ -88,7 +88,13 @@ def msg_handler(message: Message):
     if msg['text'] == 'Какая сегодня погода?':
         reply = 'Извините, но я Вас не понял'
         bot.reply_to(message, reply, parse_mode='markdown')
-        return 
+        return
+
+    if msg['text'] == 'Где найти списки паступления?':
+        reply = 'Перефразируйте вопрос или попробуйте найти информацию на ' \
+                '<a href="https://kubsu.ru">сайте университета</a>'
+        bot.reply_to(message, reply, parse_mode='HTML')
+        return
 
     if messages == 2:
         bot.reply_to(message, reply, parse_mode='markdown')
