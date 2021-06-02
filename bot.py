@@ -14,7 +14,7 @@ def gen_markup():
     markup = InlineKeyboardMarkup()
     markup.row_width = 2
     markup.add(InlineKeyboardButton('Все верно', callback_data="cb_yes"),
-               InlineKeyboardButton('Нет, меня интересовало не это', callback_data="cb_no"))
+               InlineKeyboardButton('Ошибся', callback_data="cb_no"))
     return markup
 
 
